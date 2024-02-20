@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #486149;
+    --secondary: #e2d4b4;
+}
+
+body{
+    background-color: rgb(206, 206, 172);
+    color: gray;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* header */
+.header{
+    background: var(--primary);
+    border-radius: 10px;
+    width: 450px;
+    height: 150px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.header-title{
+    color: var(--secondary);
+    text-align: center;
+}
+
+.notification-container{
+    display: flex;
+    margin-top: 20px;
+}
+
+.notification{
+    background-color: var(--secondary);
+    border-radius: 30px;
+    padding: 10px;
+    width: 100px;
+    height: 35px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* list item */
+.list-container{
+    margin-top: 20px;
+    width: 450px;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.list-item{
+    background: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 50px;
+}
+
+.list-text{
+    width: 380px;
+    word-wrap: break-word;
+}
+
+.delete-list{
+    font-size: 20px;
+    color: var(--primary);
+    margin-right: 10px;
+}
+
+/* .fa-edit{
+    font-size: 20px;
+    color: var(--primary);
+} */
+
+/* input list */
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 450px;
+}
+
+.input-container  input{
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+    border-style: none;
+    background: var(--secondary);
+    border: 1px solid var(--primary);
+    padding: 20px;
+    color: gray;
+}
+
+.button-input-submit{
+    color: var(--primary);
+    font-size: 40px;
+}
+
+.button-input-submit:hover,
+.delete-list:hover,
+.fa-edit:hover{
+    opacity: 0.9;
+}
